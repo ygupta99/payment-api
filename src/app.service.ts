@@ -14,7 +14,8 @@ import {
 } from '@rarible/protocol-ethereum-sdk';
 import { toAddress, toBigNumber } from '@rarible/types';
 
-const HDWalletProvider = require('@truffle/hdwallet-provider');
+// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('./core/Provider');
 import { successResponse, errorResponse } from './utils/apiResponse';
 import { httpStatusCode } from './utils';
 @Injectable()
